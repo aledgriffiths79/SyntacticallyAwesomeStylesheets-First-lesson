@@ -1,0 +1,47 @@
+/*.wrapper {
+    .main {
+        .container {
+            .article {
+                .post {
+                    p {
+                    color: blue;
+                    }
+                }
+            }
+        }
+    }
+} This is deep nesting within selectors,but its seen as messy code so will alter as shown below*/
+.wrapper .main {
+  width: 300px;
+  height: 300px;
+  background-color: yellow; }
+
+/*& this is the ampersand logo that signifies it is the parent of main*/
+p {
+  font-family: open-sans;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* the % logo below is to signify that it is a placeholder. unlike a class a
+placeholder can be used whenever you need it for a certian element. You execute it
+using @extend*/
+div {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+/*div {
+    @extend %backgroundImage;
+}*/
+.container {
+  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+
+.article {
+  background-image: url("https://dummyimage.com/450x250/000/fff"); }
+
+.post {
+  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
+
+/*# sourceMappingURL=main.css.map */
