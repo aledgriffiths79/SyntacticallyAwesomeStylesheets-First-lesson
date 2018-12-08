@@ -1,47 +1,29 @@
-/*.wrapper {
-    .main {
-        .container {
-            .article {
-                .post {
-                    p {
-                    color: blue;
-                    }
-                }
-            }
-        }
-    }
-} This is deep nesting within selectors,but its seen as messy code so will alter as shown below*/
-.wrapper .main {
-  width: 300px;
-  height: 300px;
-  background-color: yellow; }
+/* Code used up to 1:38 in the video*/
+h1 {
+  font-size: 2em; }
 
-/*& this is the ampersand logo that signifies it is the parent of main*/
-p {
-  font-family: open-sans;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase; }
+/* Code used beyond that point */
+.item-black {
+  background-color: #000000; }
 
-/* the % logo below is to signify that it is a placeholder. unlike a class a
-placeholder can be used whenever you need it for a certian element. You execute it
-using @extend*/
+.item-red {
+  background-color: #e84610; }
+
+.item-green {
+  background-color: #bada55; }
+
+body {
+  background-color: #000000; }
+
 div {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
+  width: 300px;
+  height: 500px;
+  border: 1px solid #000000; }
 
-/*div {
-    @extend %backgroundImage;
-}*/
-.container {
-  background-image: url("https://dummyimage.com/450x250/f00/fff"); }
+h1 {
+  color: #ffffff; }
 
-.article {
-  background-image: url("https://dummyimage.com/450x250/000/fff"); }
-
-.post {
-  background-image: url("https://dummyimage.com/450x250/ddd/fff"); }
+div.container {
+  background-color: orange; }
 
 /*# sourceMappingURL=main.css.map */
